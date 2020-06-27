@@ -49,7 +49,7 @@ export default {
                 return `${(v.data.value * 100).toFixed(2)}%`
               },
               textStyle: {
-                fontSize: 36,
+                fontSize: 24,
                 color: '#999',
                 fontWeight: 'normal'
               },

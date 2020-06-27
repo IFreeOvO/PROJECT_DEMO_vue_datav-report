@@ -270,6 +270,8 @@ export default {
     }
     .sales-view-list {
       flex: 1;
+      display: flex;
+      flex-direction: column;
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -281,6 +283,10 @@ export default {
       }
       .list-item-wrapper {
         margin-top: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         .list-item {
           display: flex;
           align-items: center;
