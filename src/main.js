@@ -20,6 +20,10 @@ import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
 
+import Echarts from 'echarts'
+import VueECharts from 'vue-echarts'
+import './plugins/vcharts'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -44,6 +48,9 @@ Object.keys(filters).forEach(key => {
 })
 
 Vue.config.productionTip = false
+
+Vue.prototype.$echarts = Echarts
+Vue.component('v-chart', VueECharts)
 
 new Vue({
   el: '#app',
